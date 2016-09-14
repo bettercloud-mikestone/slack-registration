@@ -1,0 +1,32 @@
+{
+  "name": "slack-registration",
+  "scripts": {
+  },
+  "env": {
+    "COMMUNITY_NAME": {
+      "required": true
+    },
+    "INVITE_TOKEN": {
+      "required": true
+    },
+    "SLACK_TOKEN": {
+      "required": true
+    },
+    "SLACK_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
